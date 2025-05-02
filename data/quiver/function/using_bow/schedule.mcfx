@@ -1,0 +1,6 @@
+advancement revoke @s only quiver:using_bow
+
+schedule function quiver:using_bow/revoke 2t replace
+
+execute if items entity @s weapon.mainhand bow[enchantments={}] run item modify entity @s weapon.mainhand quiver:remove_glint
+enchant @s quiver:quiver

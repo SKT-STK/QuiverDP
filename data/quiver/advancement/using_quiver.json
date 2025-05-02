@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "quiver.quiver": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "quiver:replenish/self"
+  }
+}

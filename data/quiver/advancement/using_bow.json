@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bow"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "quiver:using_bow/schedule"
+  }
+}

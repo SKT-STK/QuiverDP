@@ -1,0 +1,37 @@
+{
+  "anvil_cost": 0,
+  "description": "",
+  "effects": {
+    "minecraft:ammo_use": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0.0
+        }
+      }
+    ],
+    "projectile_spawned": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "quiver:shot_arrow/self"
+        }
+      }
+    ]
+  },
+  "exclusive_set": "minecraft:infinity",
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:bow",
+  "weight": 1
+}

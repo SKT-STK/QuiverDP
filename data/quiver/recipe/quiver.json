@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  @",
+    "#$@",
+    "#$@"
+  ],
+  "key": {
+    "@": "minecraft:leather",
+    "#": "minecraft:string",
+    "$": "minecraft:rabbit_hide"
+  },
+  "result": {
+    "id": "minecraft:music_disc_13",
+    "components": {
+      "!minecraft:jukebox_playable": {},
+      "minecraft:item_name": "\"Empty Arrow Quiver\"",
+      "minecraft:item_model": "quiver:quiver_empty",
+      "minecraft:custom_data": {
+        "quiver.quiver": true,
+        "quiver.arrows": []
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 100000
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:lore": [
+        "{\"text\":\"0 / 192\",\"color\":\"gray\"}"
+      ],
+      "minecraft:rarity": "common",
+      "max_damage": 99,
+      "damage": 99
+    },
+    "count": 1
+  }
+}
