@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "inventory_changed"
+    }
+  },
+  "rewards": {
+    "function": "quiver:offhand/self"
+  }
+}

@@ -1,4 +1,4 @@
-function quiver:_schedule/b1ff31dd-25d2-4940-9f89-121c943c68cf
+function quiver:_schedule/dc61a763-4f59-45f0-a2d1-bf1701d62487
 
 execute unless predicate quiver:is_sneaking run return -1
 execute unless items entity @s weapon.offhand #minecraft:arrows run return -1

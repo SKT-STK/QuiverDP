@@ -1,1 +1,1 @@
-execute as @a at @s run function quiver:main/self
+# execute as @a at @s run function quiver:main/self
