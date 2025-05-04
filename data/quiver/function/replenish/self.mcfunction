@@ -1,4 +1,4 @@
-function quiver:_schedule/dc61a763-4f59-45f0-a2d1-bf1701d62487
+function quiver:_schedule/0fca588e-2c51-4150-ab07-1eaf3899d55c
 
 execute unless predicate quiver:is_sneaking run return -1
 execute unless items entity @s weapon.offhand #minecraft:arrows run return -1
@@ -8,7 +8,6 @@ execute store result score @s quiver.count.arrow run data get storage quiver:qui
 execute if score @s quiver.count.arrow matches 191.. run return -1
 
 execute in quiver:quiver_forceload run forceload add 0 0
-execute in quiver:quiver_forceload run setblock 0 2 0 decorated_pot
 execute in quiver:quiver_forceload run item replace block 0 2 0 container.0 from entity @s weapon.mainhand
 execute in quiver:quiver_forceload run data modify block 0 2 0 item.id set value "minecraft:arrow"
 execute in quiver:quiver_forceload run data modify block 0 2 0 item.components."minecraft:max_stack_size" set value 1

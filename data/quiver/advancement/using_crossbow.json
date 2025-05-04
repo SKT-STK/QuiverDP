@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:crossbow"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "quiver:crossbow/self"
+  }
+}

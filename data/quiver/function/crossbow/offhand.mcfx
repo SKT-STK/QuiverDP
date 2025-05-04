@@ -1,0 +1,4 @@
+tag @s add quiver.player3
+execute positioned ~ ~1.5 ~ summon item{Item:{id:dirt},PickupDelay:40,Motion:[.15d,.15d,.15d]} positioned ~ ~-1.5 ~ run data modify entity @s Item set from entity @p[tag=quiver.player3] Inventory[{Slot:-106b}]
+tag @s remove quiver.player3
+item replace entity @s weapon.offhand with air

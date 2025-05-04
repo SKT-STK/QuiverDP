@@ -11,4 +11,6 @@ scoreboard players reset * quiver.CONST
 
 scoreboard players set %2 quiver.CONST 2
 
+execute in quiver:quiver_forceload run forceload add 0 0
+execute in quiver:quiver_forceload run fill 0 0 0 0 3 0 decorated_pot
 execute in quiver:quiver_forceload run forceload remove all

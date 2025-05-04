@@ -4,7 +4,6 @@ execute if score @s quiver.BOOL.is_spectral matches 0 run function quiver:shot_a
 data modify entity @n[tag=quiver.shot_arrow] item set from entity @s Inventory[{components:{"minecraft:custom_data":{quiver.quiver:true}}}].components."minecraft:custom_data"."quiver.arrows"[0]
 
 execute in quiver:quiver_forceload run forceload add 0 0
-execute in quiver:quiver_forceload run setblock 0 1 0 decorated_pot
 execute in quiver:quiver_forceload run data modify block 0 1 0 item set from entity @s Inventory[{components:{"minecraft:custom_data":{quiver.quiver:true}}}]
 execute in quiver:quiver_forceload run data remove block 0 1 0 item.components."minecraft:custom_data"."quiver.arrows"[0]
 data modify storage quiver:quiver slot set from entity @s Inventory[{components:{"minecraft:custom_data":{quiver.quiver:true}}}].Slot
