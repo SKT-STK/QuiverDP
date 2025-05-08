@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "tick"
+    }
+  },
+  "rewards": {
+    "function": "quiver:crossbow/stop_tick"
+  }
+}

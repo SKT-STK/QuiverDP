@@ -6,11 +6,9 @@ scoreboard objectives add quiver.count.quiver.main dummy
 scoreboard objectives add quiver.count.quiver.1 dummy
 scoreboard objectives add quiver.count.quiver.2 dummy
 scoreboard objectives add quiver.CONST dummy
+scoreboard objectives add quiver.using.bow dummy
+scoreboard objectives add quiver.using.crossbow dummy
 
 scoreboard players reset * quiver.CONST
 
 scoreboard players set %2 quiver.CONST 2
-
-execute in quiver:quiver_forceload run forceload add 0 0
-execute in quiver:quiver_forceload run fill 0 0 0 0 3 0 decorated_pot
-execute in quiver:quiver_forceload run forceload remove all
