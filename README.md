@@ -8,7 +8,9 @@ you cannon put a quiver into your offhand
 you cannon put a bow into your offhand if youve got a quiver in your inventory  
 you can craft the quiver as follows: (1st row: air, air, leather) (2nd row: string, rabbit_hide, leather) (3rd row: same as second)  
 
+to use the datapack install python along with 'beet' and 'bolt' and run the Makefile, afterwords copy the quiver_data_pack folder from build/ to your world's datapack folder  
+
 !!! IMPORTANT !!!  
-THIS DATAPACK HAS A CORRESPONDING RESOURCEPACK (QuiverRP)  
+THIS DATAPACK HAS A CORRESPONDING RESOURCEPACK (quiver_resource_pack in the build directory alongside _data_pack)   
 
 (1.21.5)  

@@ -1,6 +1,0 @@
-tag @s add quiver.player
-execute positioned ~ ~1.5 ~ summon item{Item:{id:dirt}} positioned ~ ~-1.5 ~ run data modify entity @s Item set from entity @p[tag=quiver.player] SelectedItem
-tag @s remove quiver.player
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
-item replace entity @s weapon.offhand with air
-tellraw @s ["", {"text": "[QUIVER] ", "color": "red", "bold": true}, {"text": "You cannot put a bow into your offhand whilst having a quiver in your inventory!", "color": "red"}]

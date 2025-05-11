@@ -1,3 +1,0 @@
-$execute if score @s quiver.count.arrow matches 0 run item replace entity @s container.$(slot) with music_disc_13[!jukebox_playable,custom_data={quiver.quiver:true,quiver.arrows:[]},consumable={consume_seconds:100000},item_name="Empty Arrow Quiver",item_model="quiver:quiver_empty",max_stack_size=1,rarity="common",max_damage=99,damage=99]
-$execute if score @s quiver.count.arrow matches 1.. run item replace entity @s container.$(slot) from entity @n[tag=quiver.item] contents
-$item modify entity @s container.$(slot) {function:"set_components",components:{"minecraft:lore":[{"text":"$(count) / 192","color":"gray"}]}}

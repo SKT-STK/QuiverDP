@@ -1,0 +1,14 @@
+{
+  "name": "quiver",
+  "require": [
+    "bolt"
+  ],
+  "data_pack": {
+    "load": ["src/quiver_dp"]
+  },
+  "resource_pack": {
+    "load": ["src/quiver_rp"]
+  },
+  "pipeline": ["mecha"],
+  "output": "build"
+}

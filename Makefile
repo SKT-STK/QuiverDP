@@ -1,5 +1,4 @@
 run:
-	python scripts/superset.py
-
-arrows_count:
-	python scripts/arrows_count.py
+	beet build
+	xcopy schedule.py build /Y /I
+	cd build && python schedule.py
