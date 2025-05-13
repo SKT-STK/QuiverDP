@@ -23,7 +23,7 @@ execute if score @s quiver.count.arrow matches 189.. run data modify entity @n[t
 item replace entity @s weapon.mainhand from entity @n[tag=quiver.item] contents
 kill @e[tag=quiver.item]
 
-scoreboard players operation @s quiver.count.arrow += %2 quiver.CONST
+scoreboard players operation @s quiver.count.arrow += #2 quiver.CONST
 item modify entity @s weapon.offhand {function:"set_count",add:true,count:-1}
 execute store result storage quiver:quiver count int 1 run scoreboard players get @s quiver.count.arrow
 function quiver:_/replenish/self_m:
