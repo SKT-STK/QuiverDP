@@ -5,6 +5,5 @@ execute if score @s quiver.using.crossbow matches 1.. run return run advancement
 scoreboard players set @s quiver.using.crossbow 0
 
 data modify storage quiver:quiver slot set from entity @s Inventory[{components:{"minecraft:custom_data":{quiver.quiver:true}}}].Slot
-function quiver:_/crossbow/stop_tick_m:
-  $item modify entity @s container.$(slot) {function:"set_item",item:"arrow"}
-function quiver:_/crossbow/stop_tick_m with storage quiver:quiver
+function(with storage quiver:quiver):
+  $item modify entity @s container.$(slot) {function:"minecraft:set_item",item:"minecraft:arrow"}

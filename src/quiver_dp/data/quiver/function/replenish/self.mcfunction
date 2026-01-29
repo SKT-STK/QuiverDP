@@ -1,6 +1,9 @@
-function quiver:_/replenish/self_s:
-  advancement revoke @s only quiver:using_quiver
-execute as @s run schedule function quiver:_/replenish/self_s 2t replace
+tag @s add quiver.replenish_schedule
+function(2t):
+  execute as @a[tag=quiver.replenish_schedule]:
+    advancement revoke @s only quiver:using_quiver
+    tag @s remove quiver.replenish_schedule
+
 
 execute unless predicate quiver:is_sneaking run return -1
 execute unless items entity @s weapon.offhand #minecraft:arrows run return -1
@@ -24,7 +27,6 @@ kill @e[tag=quiver.item]
 
 item modify entity @s weapon.offhand {function:"set_count",add:true,count:-1}
 execute store result storage quiver:quiver count int 1 run scoreboard players operation @s quiver.count.arrows += #1 quiver.CONST
-function quiver:_/replenish/self_m:
+function(with storage quiver:quiver):
   $item modify entity @s weapon.mainhand {function:"set_components",components:{lore:[{"text":"$(count) / 192","color":"gray"}]}}
-function quiver:_/replenish/self_m with storage quiver:quiver
 execute at @s run playsound minecraft:item.armor.equip_generic master @a ~ ~ ~ 1 1

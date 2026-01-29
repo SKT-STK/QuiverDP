@@ -25,8 +25,7 @@ execute if score @s quiver.count.full_quiver matches 1.. run return run execute:
   execute store result entity @n[tag=quiver.this] Motion[0] double 0.004 run scoreboard players get @s quiver.pos.x
   execute store result entity @n[tag=quiver.this] Motion[2] double 0.004 run scoreboard players get @s quiver.pos.z
   data modify storage quiver:quiver slot set from entity @s Inventory[{components:{"minecraft:item_model":"quiver:quiver_full"}}].Slot
-  function quiver:_/inv/self_m:
+  function(with storage quiver:quiver):
     $data modify entity @n[tag=quiver.this] Item set from entity @s Inventory[{Slot:$(slot)b}]
     $item replace entity @s container.$(slot) with air
-  function quiver:_/inv/self_m with storage quiver:quiver
   tag @e remove quiver.this

@@ -1,13 +1,13 @@
 item_modifiers = [
   {
-    function: 'set_components',
+    function: 'minecraft:set_components',
     components: {
       '!minecraft:enchantment_glint_override': {},
       '!minecraft:rarity': {}
     }
   },
   {
-    function: 'set_enchantments',
+    function: 'minecraft:set_enchantments',
     enchantments: {
       'quiver:quiver': 0
     }

@@ -9,6 +9,6 @@
   "resource_pack": {
     "load": ["src/quiver_rp"]
   },
-  "pipeline": ["mecha", "skt_stk.schedule", "skt_stk.anchored"],
+  "pipeline": ["skt_stk.inline", "mecha"],
   "output": "build"
 }

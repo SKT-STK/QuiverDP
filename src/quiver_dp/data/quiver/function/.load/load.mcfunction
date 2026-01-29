@@ -14,4 +14,4 @@ scoreboard players reset * quiver.CONST
 scoreboard players set #1 quiver.CONST 1
 scoreboard players set #-1 quiver.CONST -1
 
-gamerule maxCommandChainLength 2147483647
+gamerule max_command_sequence_length 2147483647

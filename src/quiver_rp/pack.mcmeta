@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 420,
+    "min_format": [75, 0],
+    "max_format": [75, 0],
     "description": "RP for the Quiver DP"
   }
 }
